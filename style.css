@@ -1,0 +1,251 @@
+
+
+
+
+
+.card{
+    background-image: url(./Знімок\ екрана\ 2023-05-29\ о\ 18.25.40.png);
+    width: 436px;
+    height: 430px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.card:nth-child(2){
+    background-image: url(./Знімок\ екрана\ 2023-05-30\ о\ 18.31.06.png);
+    background-position: -300px;
+}
+
+.card:nth-child(2):hover{
+    background-image: url(./Знімок\ екрана\ 2023-05-30\ о\ 18.31.06.png);
+    background-position: 900px;
+    box-shadow: 20px 0 90px #ff0000;
+}
+.card:hover:nth-child(2){
+    box-shadow: 0 0 40px #ff0000;
+}
+body{
+    background-color: #000;
+}
+.main__block{
+    display: flex;
+    margin-top: 100px;
+}
+.text__music{
+    color: #fff;
+    text-align: center;
+}
+.title__music{
+    color: #fff;
+    text-align: center;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 40px #ff00ee;
+    transition: 1s;
+}
+
+@media(max-width:767px){
+    .card{
+        margin: 0 auto;
+        animation: card-unactive 1s linear forwards;
+    }
+    body{
+        background-color: #fff;
+    }
+        .text__music{
+    
+        }
+        .text__music:hover{ 
+            animation: card-text 1s linear infinite;
+        }
+}
+@keyframes card-text{
+    0%{
+    text-transform: capitalize;
+    }
+    50%{
+    }
+    100%{
+        text-transform: capitalize;
+    }
+}
+@keyframes card-unactive{
+    0%{
+
+    }
+    100%{
+
+    }
+}
+
+.input-audio1 {
+    display:none;
+}
+.input-audio2 {
+    display:none;
+}
+.button-audio {
+    border: 1px solid #fff;
+    padding: 20px 35px;
+    background-color: #fff;
+    color: red;
+}
+
+.click-bar-right{
+    cursor: pointer;
+}
+.button-audio{
+cursor: pointer;
+}
+.block-info-right{
+background-color: #fff;
+    transform: translateX(550px);
+    transition: 1s;
+    cursor: pointer;
+}
+.block-info{
+    background-color: #fff;
+    transform: translateX(-550px);
+    transition: 1s;
+    cursor: pointer;
+}
+.input-audio2[type="checkbox"]:checked ~ .block-info-right{
+    background-color:red;
+    transform: translateX(0px);
+
+}
+.input-audio1[type="checkbox"]:checked ~ .block-info{
+    background-color:red;
+    transform: translateX(0px);
+    background-color: #fb00ff;
+    color: #fff;
+}
+.text__music-HORROR{
+    color:rgb(88, 4, 4);
+
+}
+.block-info{
+
+}
+.block-info-right{
+position: relative;
+top:100px;
+}
+.block-info{
+    position: relative;
+    top:100px;
+}
+.text__music{
+    font-size: 30px;
+}
+.text__music-HORROR{
+    font-size: 30px;
+}
+.input[type="checkbox"]:checked ~ .button-audio{
+    background-color:red;
+    color: #000;
+    transform: translateX(0px);
+}
+.input-audio2[type="checkbox"]:checked ~ .music-2 .button-audio{
+    background-color:red;
+    transform:rotate(10turn);
+    border-radius: 10px;
+    color: #000;
+    transition: 5s;
+    border-radius: 30px 80px 110px;
+}
+.input-audio1[type="checkbox"]:checked ~ .music-1 .button-audio-1{
+    border: 1px solid #000;
+    background-color:red;
+}
+.input-audio1[type="checkbox"]:checked ~ .music-1 .button-audio{
+    transform: translateY(140px) scale(1.7);
+    transition: 2.1s;
+    background-color: #fb00ff;
+    color: #fff;
+    border-radius: 10px;
+}
+.title__music:hover{
+    transition: 2s;
+    font-size: 30px;
+}
+.text__music:hover{
+    animation: rainbow 3s linear infinite;
+}
+@keyframes rainbow{
+    0%{
+color: red;
+    }
+    25%{
+        color: yellow;
+    }
+    50%{
+        color:green;
+    }
+    75%{
+        color: blue;
+    }
+    100%{
+        color:purple;
+    }
+}
+.text__music-HORROR:hover{
+    animation: scary 3s linear infinite;
+}
+@keyframes scary{
+    0%{
+    color: red;
+    }
+    25%{
+        color:rgb(88, 4, 4);
+    }
+    50%{
+        color: red;
+    }
+    75%{
+        color:rgb(88, 4, 4);
+    }
+    100%{
+        color: red;
+    }
+}
+.header{
+    list-style: none;
+    font-size: 25px;
+}
+.header__body{
+
+}
+.header-ul{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.ul-item{
+    color: #fff;
+    text-decoration: none;
+}
+.ul-item:hover+img {
+    position: relative;
+    left:130px;
+    top:;
+    transition: 1s;
+    display: block;
+    transform: rotate(3turn);
+}
+
+.note{
+    position: absolute;
+    transform: translateX(-100px);
+}
+.none {
+
+    display: none;
+}
